@@ -11,9 +11,8 @@ function handleImageButtonClick(clickEvent) {
   clickEvent.preventDefault();
 
   const button = clickEvent.currentTarget;
-  const image = button.querySelector('.gallery__img');
 
-  if (!(mainImage && image)) {
+  if (!mainImage) {
     return;
   }
 
